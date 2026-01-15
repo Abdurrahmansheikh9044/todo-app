@@ -4,23 +4,38 @@ body {
   text-align: center;
   padding: 50px;
 }
+
 .container {
   background: white;
   padding: 20px;
   border-radius: 8px;
   display: inline-block;
+  text-align: left; /* 👈 This ensures list items align left */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
 }
+
 input {
   padding: 10px;
   width: 200px;
+  margin-right: 10px;
 }
+
 button {
   padding: 10px;
+  cursor: pointer;
 }
-li {
-  color: black;
-  font-size: 18px;
-  margin: 5px 0 ;
-  text-align: left;
-  margin: 5px 0;
+
+ul#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul#taskList li {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
 }
